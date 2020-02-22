@@ -3058,10 +3058,10 @@ function userDetails(username) {
      ```javascript
       var ws = new WeakMap();
       var user = {};
-      ws.set(user);
-      ws.has(user);    // true
-      ws.delete(user); // removes user from the map
-      ws.has(user);    // false, user has been removed
+      ws.set(user, 'userName');    //add a new element with key user and value userName
+      ws.has(user);                // true
+      ws.delete(user);             // removes user from the map
+      ws.has(user);                // false, user has been removed
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
